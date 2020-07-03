@@ -1,0 +1,85 @@
+信息系统与数据库技术练习17答题卡
+
+班级：信息管理2班     
+姓名：黄家福    
+学号：20190307227     
+
+*注：排除答案放置在序号下方。* /
+
+（一）
+1。
+使用项目
+
+
+2。
+SELECT Did AS部门号，AVG（BasePay）AS平均基本工资，COUNT（Eid）AS人数，COUNT（Insurance）AS交保险人数
+来自员工
+分组依据
+
+
+3。
+SELECT Esex，AVG（DATEDIFF（YY，WorkDate，GETDATE（）））AS AvgSeniority，COUNT（*）AS Cnt
+来自员工
+按艾塞克斯分组
+
+
+
+4。
+SELECT Eid，Esex，COUNT（*）AS Cnt
+来自员工
+按开斋节分组
+埃塞克斯订购
+
+
+
+5，
+SELECT Pid，SUM（工资）
+从EP
+按点分组
+总和（工资）> = 13000
+按薪水总和排序
+
+
+6。
+SELECT Pid，SUM（工资）
+从EP 
+哪里输入（'A002'，'A004'）
+按点分组
+
+7
+SELECT Did，COUNT（*）
+来自员工
+底薪> 5000
+分组依据
+
+
+8。
+SELECT Pid，COUNT（Eid）
+从EP
+按点分组
+拥有COUNT（Eid）> = 2
+
+
+9。
+涉及的创建表
+（Id int PRIMARY KEY IDENTITY（1,1），
+Pid char（4）NOT NULL外键引用项目，
+Eid char（4）NOT NULL外键引用项目，
+Idate smalldatetime，
+十进制数（12,3））
+
+
+10。
+开斋节
+A001 1002
+A001 1004
+A002 1004 * /
+涉及的INSERT（Pid，Eid）
+VALUES（'A001'，'1002'），
+	（'A001'，'1004'），
+	（“ A002”，“ 1004”
+
+
+11。
+选择 *
+从参与
